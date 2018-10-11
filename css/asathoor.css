@@ -1,4 +1,49 @@
 /**
  * file: asathoor.css
- * being: my style stuff / petj
+ * being: my wyrd styles
  **/
+body {
+  color: green;
+  background: #000;
+  font-family: courier, monospace, monospace; // hack: bevarer størrelsen
+}
+footer {
+  padding: 2rem;
+  text-align: center;
+  font-size: small;
+  color: green;
+}
+pre {
+  color: #fff;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: yellow;
+}
+
+/* knapper */
+.tt-set,
+.bri-set,
+.lg-set,
+.sat-set,
+.ct-set,
+.send-button,
+.guick-set {
+  color: green;
+  background: #082608;
+  border-color: green;
+}
+.off-button {
+  color: #fff;
+  background: red;
+}
+.on-button {
+  color: #fff;
+  background: blue;
+}
+.box {
+  border: 2px solid #284427;
+}

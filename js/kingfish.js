@@ -1,6 +1,6 @@
 /**
  * file: kingfish.js
- * being: the original jquery script
+ * being: the original script
  **/
 $(function () {
     // load all .persistent elements
