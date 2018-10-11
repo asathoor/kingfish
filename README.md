@@ -2,6 +2,11 @@
 
 A version for personal use. / petj
 
+#### Ideas
+
+* Bower: ok.
+* Responsive version via Bootstrap: in progress.
+
 ----
 
 ### Kingfish for Philips Hue, by Peter Kaminski
