@@ -1,3 +1,9 @@
+## Experiments with Philip Hue
+
+A version for personal use. / petj
+
+----
+
 ### Kingfish for Philips Hue, by Peter Kaminski
 
 An open-source single-file HTML/JavaScript Hue controller for
