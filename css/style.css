@@ -1,0 +1,81 @@
+/**
+ * file: style.css
+ * being: Peter Kaminski's original stylesheet
+ **/
+ body {
+     margin: 1em;
+ }
+
+ footer,
+ header {
+     position: relative;
+     clear: both;
+ }
+
+ @media screen and (min-width: 40em) {
+     .columns-container {
+         float: left;
+     }
+     .left-column {
+         width: 29em;
+         margin-right: -30em;
+         float: left;
+     }
+     .right-column {
+         margin-left: 30em;
+         float: left;
+     }
+ }
+
+ div.centered {
+     text-align: center;
+ }
+
+ div {
+     margin: .2em;
+ }
+
+ div.box {
+     border: solid 1px;
+     padding: .4em;
+     margin: .4em;
+ }
+
+ span.noun {
+     font-weight: bold;
+ }
+
+ input,
+ select {
+     background: #f8f8ff;
+ }
+
+ button,
+ .quick-set {
+     background: #e8ffe8;
+ }
+
+ .send-button {
+     background: #e8e8ff;
+ }
+
+ .on-button {
+     background: #a8a8ff;
+ }
+
+ .off-button {
+     background: #ffaaaa;
+ }
+
+ div.verbiage {
+     max-width: 45em;
+ }
+
+ div.fineprint {
+     font-style: italic;
+     font-size: 80%;
+ }
+
+ .ui-widget {
+     font-size: 80%;
+ }
