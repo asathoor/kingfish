@@ -19,8 +19,9 @@ $(function () {
         $("#devicetype").change();
     }
 
+    // Asathoor: removed .buttonset from Jq-ui
     // set up light-group buttonset
-    $("#lg").buttonset();
+    //$("#lg").buttonset();
 });
 
 // save .persistent element when it changes

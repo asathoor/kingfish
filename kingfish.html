@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Bootstrap Example</title>
+  <title>Philips Hue: Kingfish / Bootstrap</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,19 +12,21 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <!-- additional styles -->
-  <link rel="stylesheet" href="css/kingfish.css">
+  <!-- link rel="stylesheet" href="css/kingfish.css" -->
   <link rel="stylesheet" href="css/asathoor.css">
 </head>
 
 <body>
+  <div class="container">
+
 
   <header class="jumbotron text-center">
-      <h1>Philips Hue</h1>
+      <h1>Kingfish</h1>
+      <p>for Philips Hue</p>
   </header>
-  <div class="columns-container">
-    <div class="left-column">
+
       <div class="box">
-        <div class="box-header">2. Select <span class="noun">Group</span> or <span class="noun">Light</span></div>
+        <h2 class="box-header">Select <span class="noun">Group</span> or <span class="noun">Light</span></h2>
         <div>
           <span id="lg">
                         <input class="persistent" type="radio" id="lg-group" name="lg" value="groups" checked>
@@ -51,7 +53,7 @@
         </div>
       </div>
       <div class="box">
-        <div class="box-header">2. Select <span class="noun">Transition Time</span></div>
+        <h2 class="box-header">2. Select <span class="noun">Transition Time</span></div>
         <div>
           <input class="persistent" id="tt-val" type="text" size="3" value="5" />
           <select class="persistent" id="tt-sel">
@@ -72,7 +74,7 @@
         </div>
       </div>
       <div class="box">
-        <div class="box-header">3. Send <span class="noun">Brightness (0-254) + On</span></div>
+        <h2 class="box-header">Send <span class="noun">Brightness (0-254) + On</span></h2>
         <div>
           <input class="persistent" id="on-bri" type="text" size="3" value="127" />
           <button class="send-button, on-button" id="on">On</button>
@@ -90,7 +92,7 @@
         </div>
       </div>
       <div class="box">
-        <div class="box-header">3. Send <span class="noun">Hue (0-65535) + Saturation (0-254)</span></div>
+        <h2 class="box-header">3. Send <span class="noun">Hue (0-65535) + Saturation (0-254)</span></h2>
         <div>
           Hue
           <input class="persistent" id="huesat-hue" type="text" size="5" value="32767" /> + Sat
@@ -128,7 +130,7 @@
         </div>
       </div>
       <div class="box">
-        <div class="box-header">3. Send <span class="noun">Color Temp K (2000-6500)</span></div>
+        <h2 class="box-header">3. Send <span class="noun">Color Temp K (2000-6500)</span></h2>
         <div>
           <input class="persistent" id="ct-kelvin" type="text" size="4" value="2700" />
           <button class="send-button" id="ct">Color Temp</button>
@@ -146,7 +148,7 @@
         </div>
       </div>
       <div class="box">
-        <div class="box-header">3. Execute <span class="noun">Effect</span></div>
+        <h2 class="box-header">3. Execute <span class="noun">Effect</span></h2>
         <div>
           <button class="send-button" id="blink1">Blink 1</button>
           <button class="send-button" id="blink15">Blink 15</button>
@@ -155,7 +157,7 @@
         </div>
       </div>
       <div class="box">
-        <div class="box-header">3. Play with <span class="noun">Toys</span></div>
+        <h2 class="box-header">3. Play with <span class="noun">Toys</span></h2>
         <div>
           Drift Interval:
           <input class="persistent" id="di-val" type="text" size="3" value="5" />
@@ -168,13 +170,13 @@
         </div>
       </div>
       <div class="box">
-        <div class="box-header">3. Send <span class="noun">Off</span></div>
+        <h2 class="box-header">3. Send <span class="noun">Off</span></h2>
         <div>
           <button class="send-button, off-button" id="off">Off</button>
         </div>
       </div>
       <div class="box">
-        <div class="box-header">Get <span class="noun">Status</span></div>
+        <h2 class="box-header">Get <span class="noun">Status</span></h2>
         <div>
           <select class="persistent" id="get-sel">
                         <option value="lights">Lights</option>
@@ -190,10 +192,9 @@
           <button class="send-button" id="get">Get</button>
         </div>
       </div>
-    </div>
-    <div class="right-column">
-      <div class="box">
-        <div class="box-header">1. Retrieve or specify <span class="noun">Bridge IP Address</span> and <span class="noun">Username</span></div>
+
+    <div class="box">
+        <h2 class="box-header">1. Retrieve or specify <span class="noun">Bridge IP Address</span> and <span class="noun">Username</span></h2>
         <div>
           <button class="send-button" id="query-portal">Get Bridge IP</button>
         </div>
@@ -210,15 +211,19 @@
               <input class="persistent" id="username" type="text" size="40" />
                 </div>
             </div>
+
             <div class="box">
-              <div class="box-header"><span class="noun">Response</span></div>
+              <h2 class="box-header"><span class="noun">Response</span></h2>
               <div id="response"><pre>[]</pre>
               </div>
             </div>
-          </div>
-        </div>
+          <!--/div--><!-- end row -->
+
+        </div><!-- end container -->
+
+
         <footer>
-          Source: <strong>Kingfish for Philips Hue,</strong> <br> version 1.1.0, by Peter Kaminski <br>
+          Based on: <strong>Kingfish for Philips Hue,</strong> <br> version 1.1.0, by Peter Kaminski <br>
           <a href="https://github.com/peterkaminski/kingfish">See the project on Github</a><br>
           <br>Cloned and edited for my home by Per Thykjaer Jensen <span id="dato"></span>.
         </footer>
@@ -226,8 +231,8 @@
         <!-- Peter Kaminski's script -->
         <script src="js/kingfish.js"></script>
 
-        <!-- Asathoor's stuff -->
-        <script src="js.asathoor.js"></script>
+        <!-- Asathoor's additions -->
+        <script src="js/asathoor.js"></script>
 </body>
 
 </html>
