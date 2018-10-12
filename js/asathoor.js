@@ -12,12 +12,11 @@ $('a').attr({ target:'_blank' });
 $('.box').css(
   {
     // for testing
-    //background: 'red',
-    //border: '5px solid green'
+    //background: 'red'
   }
-)
-.before('<div class="row"><div class="col-lg-12 col-md-7 col-md-7">')
-.after('</div></div><!-- end row -->');
+);
+//.before('<div class="row"><div class="col-lg-12 col-md-7 col-md-7">')
+//.after('</div></div><!-- end row -->');
 
 // several input boxes are too wide
 $('input').css({
